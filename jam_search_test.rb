@@ -14,4 +14,10 @@ class JamSearch < Minitest::Test
     a = Host.new
     assert a
   end
+
+  def test_musician_can_be_created
+    a = Musician.new("Dan", "guitar")
+    assert a
+    
+  end
 end
