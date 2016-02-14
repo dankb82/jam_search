@@ -18,6 +18,7 @@ class JamSearch < Minitest::Test
   def test_musician_can_be_created
     a = Musician.new("Dan", "guitar")
     assert a
-    
+    assert_equal "Dan", a.name
+    assert_equal "guitar", a.instrument
   end
 end
