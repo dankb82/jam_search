@@ -15,10 +15,11 @@ class JamSearch < Minitest::Test
     assert a
   end
 
-  # def test_host_can_initialize_with_locations
-  #   a = Host.new("garage")
-  #   assert_equal "garage", a.jam_space
-  # end
+  def test_can_get_host_location
+    a = Host.new("garage")
+    assert a
+    assert_equal "garage", a.jam_space
+  end
 
   def test_musician_can_be_created
     a = Musician.new("Dan", "guitar")
